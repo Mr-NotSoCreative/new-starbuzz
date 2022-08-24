@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #B5A789;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #685d48;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+}
+main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+}
+.coffee-items {
+    order: 1;
+}
+#intro {
+    order: 2;
+}
+#bean-machine {
+    order: 3;
+}
+.brown {
+    color: #954B4B;
+}
+h1 {
+    font-size: 1rem;
+    color: #954B4B;
+    margin: 0.5rem 0;
+}
+h2 {
+    font-size: 1rem;
+    color: #954B4B;
+    margin: 0.5rem 0;
+}
+h3 {
+    color: #954B4B;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+}
+a {
+    color: #b76666;
+    text-decoration: none;
+    border-bottom: 1px dotted #b76666;
+}
+.main-content {
+    background-color: #EFE5D0;
+    padding: 20px;
+    background-image: url(./images/background.gif);
+    background-repeat: no-repeat;
+}
+.bag {
+    background-position: bottom right;
+}
+.coffee-items {
+    background-color: #EFE5D0;
+    padding: 20px;
+    background-repeat: no-repeat;
+
+}
+ul {
+    list-style-type: none;
+}
+.order-online {
+    text-align: center;
+
+}
+footer {
+    background-color: #685d48;
+    text-align: center;
+    color: #EFE5D0;
+    padding: 20px;
+    grid-column: 1 / -1;
+
+
+}
+.main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
+.coffee-items * {
+    margin: 0.7rem 0;
+}
+#intro p {
+    margin: 1rem 0;
+}
+.bean-machine-hero p {
+    margin: 0.5rem 0;
+}
+.bean-machine-hero p:last-of-type {
+    margin-bottom: 1rem;
+}
+.award {
+    position: absolute;
+    top: 30px;
+    left: 365px;
+}
+.coupon {
+    position: fixed;
+    top: 365px;
+    right: -110px;
+}
+.coupon a {
+    text-decoration: none;
+    border: none;
+}
+.coupon a img {
+    width: 80%;
+}
+/* @media screen and (max-width: 1340px) {
+    .coupon {
+        top: 575px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .coupon {
+        top: 600px;
+    }
+}
+@media screen and (max-width: 1001px) {
+    .coupon {
+        top: 650px;
+    }
+} */
