@@ -103,10 +103,13 @@ footer {
 }
 .main-nav a {
   border: none;
-  margin: 3px 15px;
+  margin: 0 15px;
   padding: 3px;
   font-weight: bold;
   color: #954b4b;
+}
+.main-nav a:hover {
+  background-color: #99999973;
 }
 
 .coffee-items * {
@@ -156,6 +159,9 @@ footer {
 @media screen and (max-width: 720px) {
   main {
     grid-template-columns: 1fr;
+  }
+  .main-nav {
+    justify-content: center;
   }
 
   .coffee-items {
