@@ -113,6 +113,11 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #954B4B;
+    padding: 5px;
+    overflow: hidden;
+}
+.main-nav ul li a:hover {
+    background-color: rgba(153, 153, 153, 0.445);
 }
 .coffee-items * {
     margin: 0.7rem 0;
@@ -158,3 +163,41 @@ footer {
         top: 650px;
     }
 } */
+@media  screen and (max-width: 720px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee-items {
+        order: 2;
+        text-align: center;
+    }
+    #intro {
+        order: 1;
+    }
+    #bean-machine {
+        order: 3;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+}
+@media  screen and (max-width: 500px) {
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav ul li {
+        margin: 10px 0;
+        background-color: #685d48;
+        border-radius: 100px;
+        padding: 10px;
+    }
+    .main-nav ul li a {
+        color: #EFE5D0;
+    }
+    .main-nav ul li a:hover {
+        background-color: transparent;
+    }
+}
