@@ -19,7 +19,7 @@ header {
 main {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 0.8fr 2fr 1fr;
     gap: 10px;
 }
 .coffee-items {
@@ -66,8 +66,9 @@ a {
 }
 .coffee-items {
     background-color: #EFE5D0;
-    padding: 20px;
+    padding: 15px;
     background-repeat: no-repeat;
+    /* max-width: 260px; */
 
 }
 ul {
@@ -89,9 +90,29 @@ footer {
 .main-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
     gap: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.5rem;
+}
+.main-nav {
+    grid-column: 1 / -1;
+    background-color: #EFE5D0;
+    padding: 5px;
+    
+}
+.main-nav ul {
+    display: flex;
+    /* justify-content: space-around; */
+}
+.main-nav ul li {
+    margin: 0 10px;
+}
+.main-nav ul li a {
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #954B4B;
 }
 .coffee-items * {
     margin: 0.7rem 0;
