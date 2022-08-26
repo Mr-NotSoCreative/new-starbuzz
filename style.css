@@ -19,7 +19,7 @@ header {
 main {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 0.8fr 2fr 1fr;
+    grid-template-columns: 0.7fr 2fr 1fr;
     gap: 10px;
 }
 .coffee-items {
@@ -133,7 +133,7 @@ footer {
 }
 .coupon {
     position: fixed;
-    top: 365px;
+    top: 400px;
     right: -110px;
 }
 .coupon a {
