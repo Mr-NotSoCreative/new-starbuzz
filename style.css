@@ -9,7 +9,7 @@ body {
   font-size: 62.5%;
 }
 
-header {
+.header {
   background-color: #685d48;
   display: flex;
   justify-content: space-between;
