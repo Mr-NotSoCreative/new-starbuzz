@@ -54,9 +54,18 @@
               muted
               poster="./images/poster.png"
             >
-              <source src="./videos/tweetsip.mp4" />
-              <source src="/videos/tweetsip.webm" />
-              <source src="./videos/tweetsip.ogv" />
+              <source
+                src="./videos/tweetsip.mp4"
+                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+              />
+              <source
+                src="/videos/tweetsip.webm"
+                type='video/webm; codecs="vp8, vorbis"'
+              />
+              <source
+                src="./videos/tweetsip.ogv"
+                type='video/ogg; codecs="theora, vorbis"'
+              />
               <p>Sorry, your browser doesn't support the video element</p>
             </video>
           </article>
